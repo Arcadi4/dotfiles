@@ -19,3 +19,4 @@
 !.config/fastfetch
 !.config/neofetch
 .Rproj.user
+!.gitconfig
