@@ -13,6 +13,11 @@
         "editor.defaultFormatter": "yzhang.markdown-all-in-one",
         "editor.wordWrap": "bounded"
     },
+    "[plaintext]": {
+        "editor.formatOnSave": false,
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false
+    },
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.defaultColorDecorators": "never",
@@ -114,6 +119,9 @@
     "git.openRepositoryInParentFolders": "never",
     "github.copilot.enable": {
         "*": true,
+        "markdown": true,
+        "plaintext": false,
+        "scminput": false
     },
     "github.copilot.nextEditSuggestions.enabled": true,
     "gitlens.ai.model": "vscode",
@@ -136,8 +144,18 @@
     "html.format.indentInnerHtml": true,
     "html.format.preserveNewLines": false,
     "html.format.wrapLineLength": 0,
+    "http.systemCertificatesNode": true,
     "javascript.format.semicolons": "insert",
     "jdk.telemetry.enabled": false,
+    "json.schemaDownload.trustedDomains": {
+        "https://json-schema.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://models.dev": true,
+        "https://opencode.ai": true,
+        "https://raw.githubusercontent.com/": true,
+        "https://schemastore.azurewebsites.net/": true,
+        "https://www.schemastore.org/": true
+    },
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.intellisense.citation.backend": "biblatex",
@@ -251,15 +269,5 @@
     "workbench.preferredHighContrastColorTheme": "Gruvbox Dark (Hard)",
     "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light (Hard)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none",
-    "json.schemaDownload.trustedDomains": {
-        "https://schemastore.azurewebsites.net/": true,
-        "https://raw.githubusercontent.com/": true,
-        "https://www.schemastore.org/": true,
-        "https://json.schemastore.org/": true,
-        "https://json-schema.org/": true,
-        "https://opencode.ai": true,
-        "https://models.dev": true
-    },
-    "http.systemCertificatesNode": true
+    "workbench.startupEditor": "none"
 }

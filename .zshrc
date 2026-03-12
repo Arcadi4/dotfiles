@@ -98,6 +98,9 @@ eval "$(zoxide init zsh)"
 # thefuck setup
 eval "$(thefuck --alias)"
 
+# pnpm completion
+eval "$(pnpm completion zsh)"
+
 # omz
 export plugins=(rust golang git zsh-syntax-highlighting iterm2 zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo 1password)
 source "$ZSH/oh-my-zsh.sh"
@@ -241,6 +244,8 @@ omo() {
     OPENCODE_CONFIG_CONTENT="$updated_json" opencode "$@"
 }
 
+source "$HOME"/Files/Developer/lucy/completions/lucy.zsh
+
 # console-ninja
 export PATH=~/.console-ninja/.bin:$PATH
 
@@ -254,3 +259,6 @@ export PATH="/opt/homebrew/opt/icu4c@78/sbin:$PATH"
 
 # print logo
 clear
+
+# Added by Antigravity
+export PATH="/Users/skylar/.antigravity/antigravity/bin:$PATH"
