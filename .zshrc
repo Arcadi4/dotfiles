@@ -83,30 +83,20 @@ export ENABLE_CORRECTION="true"
 # Homebrew setup
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# fastfetch setup
-fastfetch() {
-    local args=("--processing-timeout" "50")
-    if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
-        args+=("--logo" "default")
-    fi
-    command fastfetch "${args[@]}" "$@"
-}
-
-# zoxide setup
-eval "$(zoxide init zsh)"
-
-# thefuck setup
-eval "$(thefuck --alias)"
-
-# pnpm completion
-eval "$(pnpm completion zsh)"
+# brew command auto complete, must be done before `source "$ZSH/oh-my-zsh.sh"`
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 # omz
 export plugins=(rust golang git zsh-syntax-highlighting iterm2 zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo 1password)
 source "$ZSH/oh-my-zsh.sh"
 
-# brew command auto complete, must be done before 'source $ZSH/oh-my-zsh.sh'
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+# shell completions
+eval "$(pnpm completion zsh)"
+source "$HOME"/Files/Developer/lucy/completions/lucy.zsh
+
+# command helpers
+eval "$(zoxide init zsh)"
+eval "$(thefuck --alias)"
 
 # shell prompt configs (alien)
 source "$HOME/alien/alien.zsh"
@@ -128,15 +118,15 @@ export ALIEN_SECTION_TIME_FORMAT=%H:%M:%S
 export ALIEN_THEME="gruvbox"
 
 # Command replacements
-alias python='python3'
-alias pip='pip3'
-alias top='htop'
 alias cat='bat'
+alias clear='clear && fastfetch'
 alias df='duf'
 alias du='dust'
+alias pip='pip3'
+alias python='python3'
+alias top='htop'
 alias vim='nvim'
 alias zsh='exec zsh'
-alias clear='clear && fastfetch'
 
 # Quick commands
 alias hmcl='nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown'
@@ -146,11 +136,11 @@ alias zshrc='code ~/.zshrc'
 alias gradlew='./gradlew'
 
 # Default flags
-alias rm='rm -iv'
-alias mv='mv -iv'
 alias cp='cp -iv'
 alias dust='dust -r'
 alias markdownlint='markdownlint --disable MD013 --disable MD007'
+alias mv='mv -iv'
+alias rm='rm -iv'
 
 # fzf configs
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
@@ -200,7 +190,18 @@ function fzf {
 # rg preferences
 alias rg='rg --hidden --no-ignore'
 
+# only allow installing global npm packages with pnpm, block npm and yarn
+source "$HOME/.block-global-npm.zsh"
+
 # functions
+fastfetch() {
+    local args=("--processing-timeout" "50")
+    if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
+        args+=("--logo" "default")
+    fi
+    command fastfetch "${args[@]}" "$@"
+}
+
 function cleanbrew() {
     brew cleanup --prune=all
     brew autoremove
@@ -244,10 +245,11 @@ omo() {
     OPENCODE_CONFIG_CONTENT="$updated_json" opencode "$@"
 }
 
-source "$HOME"/Files/Developer/lucy/completions/lucy.zsh
-
 # console-ninja
 export PATH=~/.console-ninja/.bin:$PATH
+
+# secrets
+source "$HOME/.env.zsh"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -257,8 +259,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export PATH="/opt/homebrew/opt/icu4c@78/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c@78/sbin:$PATH"
 
+# local bin
+export PATH="$PATH:$HOME/.local/bin"
+
 # print logo
 clear
-
-# Added by Antigravity
-export PATH="/Users/skylar/.antigravity/antigravity/bin:$PATH"
