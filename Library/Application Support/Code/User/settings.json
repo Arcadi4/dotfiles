@@ -145,7 +145,6 @@
     "html.format.preserveNewLines": false,
     "html.format.wrapLineLength": 0,
     "http.systemCertificatesNode": true,
-    "javascript.format.semicolons": "insert",
     "jdk.telemetry.enabled": false,
     "json.schemaDownload.trustedDomains": {
         "https://json-schema.org/": true,
@@ -224,8 +223,6 @@
     "terminal.integrated.fontWeightBold": "700",
     "terminal.integrated.lineHeight": 1.15,
     "terminal.integrated.smoothScrolling": true,
-    "typescript.format.semicolons": "insert",
-    "typescript.updateImportsOnFileMove.enabled": "always",
     "vscode_custom_css.imports": [
         "file://~/.vscode.css",
         "file:///Users/skylar/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
