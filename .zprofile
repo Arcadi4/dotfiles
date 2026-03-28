@@ -39,10 +39,3 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # tinytex
 export TEXINPUTS="$TEXINPUTS:$HOME/Library/TinyTeX/bin/universal-darwin:$HOME/Library/TinyTeX/texmf-dist/tex/latex"
 export PATH="$HOME/Library/TinyTeX/bin/universal-darwin:$PATH"
-
-# zsh history
-export HISTSIZE=999999999
-export SAVEHIST=999999999
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_SPACE
-setopt SHARE_HISTORY

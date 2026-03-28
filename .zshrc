@@ -86,6 +86,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # brew command auto complete, must be done before `source "$ZSH/oh-my-zsh.sh"`
 FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
+# zsh history
+export HISTSIZE=999999999
+export SAVEHIST=999999999
+setopt SHARE_HISTORY
+setopt EXTENDED_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_SAVE_NO_DUPS
+
 # omz
 export plugins=(rust golang git zsh-syntax-highlighting iterm2 zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo 1password)
 source "$ZSH/oh-my-zsh.sh"
