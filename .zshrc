@@ -196,7 +196,7 @@ source "$HOME/.block-global-npm.zsh"
 # functions
 fastfetch() {
     local args=("--processing-timeout" "50")
-    if [[ "$TERM_PROGRAM" != "iTerm.app" ]]; then
+    if [[ "$TERM_PROGRAM" != "iTerm.app" && "$TERM_PROGRAM" != "ghostty" ]]; then
         args+=("--logo" "default")
     fi
     command fastfetch "${args[@]}" "$@"
@@ -261,6 +261,14 @@ export PATH="/opt/homebrew/opt/icu4c@78/sbin:$PATH"
 
 # local bin
 export PATH="$PATH:$HOME/.local/bin"
+
+# screensaver (ghostty only)
+if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
+    export TMOUT=600 # 10 minutes
+    TRAPALRM() {
+        ghostty +boo
+    }
+fi
 
 # print logo
 clear

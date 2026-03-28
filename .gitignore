@@ -20,3 +20,4 @@
 !.config/neofetch
 .Rproj.user
 !.gitconfig
+!Library/Application\ Support/com.mitchellh.ghostty/config

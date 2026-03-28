@@ -131,7 +131,7 @@
         "separator": " "
     },
     "logo": {
-        "type": "iterm",
+        "type": "kitty",
         "source": "~/.VTuberMacOS.png",
         "width": 34,
         "height": 20
