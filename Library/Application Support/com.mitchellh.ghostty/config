@@ -492,15 +492,15 @@ freetype-load-flags = hinting, no-force-autohint, no-monochrome, autohint
 # be fixed in a future update:
 # 
 #   - macOS: titlebar tabs style is not updated when switching themes.
-theme = Gruvbox Dark
+theme =
 
 # Background color for the window.
 # Specified as either hex (`#RRGGBB` or `RRGGBB`) or a named X11 color.
-background = #282C34
+background = #1D1F21
 
 # Foreground color for the window.
 # Specified as either hex (`#RRGGBB` or `RRGGBB`) or a named X11 color.
-foreground = #FFFFFF
+foreground = #C5C8C6
 
 # Background image for the terminal.
 # 
@@ -662,262 +662,262 @@ minimum-contrast = 1
 # 
 # For definitions on the color indices and what they canonically map to,
 # [see this cheat sheet](https://www.ditig.com/256-colors-cheat-sheet).
-palette = 0=#1D1F21
-palette = 1=#CC6666
-palette = 2=#B5BD68
-palette = 3=#F0C674
-palette = 4=#81A2BE
-palette = 5=#B294BB
-palette = 6=#8ABEB7
-palette = 7=#C5C8C6
-palette = 8=#666666
-palette = 9=#D54E53
-palette = 10=#B9CA4A
-palette = 11=#E7C547
-palette = 12=#7AA6DA
-palette = 13=#C397D8
-palette = 14=#70C0B1
-palette = 15=#EAEAEA
-palette = 16=#000000
-palette = 17=#00005F
-palette = 18=#000087
-palette = 19=#0000AF
-palette = 20=#0000D7
-palette = 21=#0000FF
-palette = 22=#005F00
-palette = 23=#005F5F
-palette = 24=#005F87
-palette = 25=#005FAF
-palette = 26=#005FD7
-palette = 27=#005FFF
-palette = 28=#008700
-palette = 29=#00875F
-palette = 30=#008787
-palette = 31=#0087AF
-palette = 32=#0087D7
-palette = 33=#0087FF
-palette = 34=#00AF00
-palette = 35=#00AF5F
-palette = 36=#00AF87
-palette = 37=#00AFAF
-palette = 38=#00AFD7
-palette = 39=#00AFFF
-palette = 40=#00D700
-palette = 41=#00D75F
-palette = 42=#00D787
-palette = 43=#00D7AF
-palette = 44=#00D7D7
-palette = 45=#00D7FF
-palette = 46=#00FF00
-palette = 47=#00FF5F
-palette = 48=#00FF87
-palette = 49=#00FFAF
-palette = 50=#00FFD7
-palette = 51=#00FFFF
-palette = 52=#5F0000
-palette = 53=#5F005F
-palette = 54=#5F0087
-palette = 55=#5F00AF
-palette = 56=#5F00D7
-palette = 57=#5F00FF
-palette = 58=#5F5F00
-palette = 59=#5F5F5F
-palette = 60=#5F5F87
-palette = 61=#5F5FAF
-palette = 62=#5F5FD7
-palette = 63=#5F5FFF
-palette = 64=#5F8700
-palette = 65=#5F875F
-palette = 66=#5F8787
-palette = 67=#5F87AF
-palette = 68=#5F87D7
-palette = 69=#5F87FF
-palette = 70=#5FAF00
-palette = 71=#5FAF5F
-palette = 72=#5FAF87
-palette = 73=#5FAFAF
-palette = 74=#5FAFD7
-palette = 75=#5FAFFF
-palette = 76=#5FD700
-palette = 77=#5FD75F
-palette = 78=#5FD787
-palette = 79=#5FD7AF
-palette = 80=#5FD7D7
-palette = 81=#5FD7FF
-palette = 82=#5FFF00
-palette = 83=#5FFF5F
-palette = 84=#5FFF87
-palette = 85=#5FFFAF
-palette = 86=#5FFFD7
-palette = 87=#5FFFFF
-palette = 88=#870000
-palette = 89=#87005F
-palette = 90=#870087
-palette = 91=#8700AF
-palette = 92=#8700D7
-palette = 93=#8700FF
-palette = 94=#875F00
-palette = 95=#875F5F
-palette = 96=#875F87
-palette = 97=#875FAF
-palette = 98=#875FD7
-palette = 99=#875FFF
-palette = 100=#878700
-palette = 101=#87875F
-palette = 102=#878787
-palette = 103=#8787AF
-palette = 104=#8787D7
-palette = 105=#8787FF
-palette = 106=#87AF00
-palette = 107=#87AF5F
-palette = 108=#87AF87
-palette = 109=#87AFAF
-palette = 110=#87AFD7
-palette = 111=#87AFFF
-palette = 112=#87D700
-palette = 113=#87D75F
-palette = 114=#87D787
-palette = 115=#87D7AF
-palette = 116=#87D7D7
-palette = 117=#87D7FF
-palette = 118=#87FF00
-palette = 119=#87FF5F
-palette = 120=#87FF87
-palette = 121=#87FFAF
-palette = 122=#87FFD7
-palette = 123=#87FFFF
-palette = 124=#AF0000
-palette = 125=#AF005F
-palette = 126=#AF0087
-palette = 127=#AF00AF
-palette = 128=#AF00D7
-palette = 129=#AF00FF
-palette = 130=#AF5F00
-palette = 131=#AF5F5F
-palette = 132=#AF5F87
-palette = 133=#AF5FAF
-palette = 134=#AF5FD7
-palette = 135=#AF5FFF
-palette = 136=#AF8700
-palette = 137=#AF875F
-palette = 138=#AF8787
-palette = 139=#AF87AF
-palette = 140=#AF87D7
-palette = 141=#AF87FF
-palette = 142=#AFAF00
-palette = 143=#AFAF5F
-palette = 144=#AFAF87
-palette = 145=#AFAFAF
-palette = 146=#AFAFD7
-palette = 147=#AFAFFF
-palette = 148=#AFD700
-palette = 149=#AFD75F
-palette = 150=#AFD787
-palette = 151=#AFD7AF
-palette = 152=#AFD7D7
-palette = 153=#AFD7FF
-palette = 154=#AFFF00
-palette = 155=#AFFF5F
-palette = 156=#AFFF87
-palette = 157=#AFFFAF
-palette = 158=#AFFFD7
-palette = 159=#AFFFFF
-palette = 160=#D70000
-palette = 161=#D7005F
-palette = 162=#D70087
-palette = 163=#D700AF
-palette = 164=#D700D7
-palette = 165=#D700FF
-palette = 166=#D75F00
-palette = 167=#D75F5F
-palette = 168=#D75F87
-palette = 169=#D75FAF
-palette = 170=#D75FD7
-palette = 171=#D75FFF
-palette = 172=#D78700
-palette = 173=#D7875F
-palette = 174=#D78787
-palette = 175=#D787AF
-palette = 176=#D787D7
-palette = 177=#D787FF
-palette = 178=#D7AF00
-palette = 179=#D7AF5F
-palette = 180=#D7AF87
-palette = 181=#D7AFAF
-palette = 182=#D7AFD7
-palette = 183=#D7AFFF
-palette = 184=#D7D700
-palette = 185=#D7D75F
-palette = 186=#D7D787
-palette = 187=#D7D7AF
-palette = 188=#D7D7D7
-palette = 189=#D7D7FF
-palette = 190=#D7FF00
-palette = 191=#D7FF5F
-palette = 192=#D7FF87
-palette = 193=#D7FFAF
-palette = 194=#D7FFD7
-palette = 195=#D7FFFF
-palette = 196=#FF0000
-palette = 197=#FF005F
-palette = 198=#FF0087
-palette = 199=#FF00AF
-palette = 200=#FF00D7
-palette = 201=#FF00FF
-palette = 202=#FF5F00
-palette = 203=#FF5F5F
-palette = 204=#FF5F87
-palette = 205=#FF5FAF
-palette = 206=#FF5FD7
-palette = 207=#FF5FFF
-palette = 208=#FF8700
-palette = 209=#FF875F
-palette = 210=#FF8787
-palette = 211=#FF87AF
-palette = 212=#FF87D7
-palette = 213=#FF87FF
-palette = 214=#FFAF00
-palette = 215=#FFAF5F
-palette = 216=#FFAF87
-palette = 217=#FFAFAF
-palette = 218=#FFAFD7
-palette = 219=#FFAFFF
-palette = 220=#FFD700
-palette = 221=#FFD75F
-palette = 222=#FFD787
-palette = 223=#FFD7AF
-palette = 224=#FFD7D7
-palette = 225=#FFD7FF
-palette = 226=#FFFF00
-palette = 227=#FFFF5F
-palette = 228=#FFFF87
-palette = 229=#FFFFAF
-palette = 230=#FFFFD7
-palette = 231=#FFFFFF
-palette = 232=#080808
-palette = 233=#121212
-palette = 234=#1C1C1C
-palette = 235=#262626
-palette = 236=#303030
-palette = 237=#3A3A3A
-palette = 238=#444444
-palette = 239=#4E4E4E
-palette = 240=#585858
-palette = 241=#626262
-palette = 242=#6C6C6C
-palette = 243=#767676
-palette = 244=#808080
-palette = 245=#8A8A8A
-palette = 246=#949494
-palette = 247=#9E9E9E
-palette = 248=#A8A8A8
-palette = 249=#B2B2B2
-palette = 250=#BCBCBC
-palette = 251=#C6C6C6
-palette = 252=#D0D0D0
-palette = 253=#DADADA
-palette = 254=#E4E4E4
-palette = 255=#EEEEEE
+# palette = 0=#1D1F21
+# palette = 1=#CC6666
+# palette = 2=#B5BD68
+# palette = 3=#F0C674
+# palette = 4=#81A2BE
+# palette = 5=#B294BB
+# palette = 6=#8ABEB7
+# palette = 7=#C5C8C6
+# palette = 8=#666666
+# palette = 9=#D54E53
+# palette = 10=#B9CA4A
+# palette = 11=#E7C547
+# palette = 12=#7AA6DA
+# palette = 13=#C397D8
+# palette = 14=#70C0B1
+# palette = 15=#EAEAEA
+# palette = 16=#000000
+# palette = 17=#00005F
+# palette = 18=#000087
+# palette = 19=#0000AF
+# palette = 20=#0000D7
+# palette = 21=#0000FF
+# palette = 22=#005F00
+# palette = 23=#005F5F
+# palette = 24=#005F87
+# palette = 25=#005FAF
+# palette = 26=#005FD7
+# palette = 27=#005FFF
+# palette = 28=#008700
+# palette = 29=#00875F
+# palette = 30=#008787
+# palette = 31=#0087AF
+# palette = 32=#0087D7
+# palette = 33=#0087FF
+# palette = 34=#00AF00
+# palette = 35=#00AF5F
+# palette = 36=#00AF87
+# palette = 37=#00AFAF
+# palette = 38=#00AFD7
+# palette = 39=#00AFFF
+# palette = 40=#00D700
+# palette = 41=#00D75F
+# palette = 42=#00D787
+# palette = 43=#00D7AF
+# palette = 44=#00D7D7
+# palette = 45=#00D7FF
+# palette = 46=#00FF00
+# palette = 47=#00FF5F
+# palette = 48=#00FF87
+# palette = 49=#00FFAF
+# palette = 50=#00FFD7
+# palette = 51=#00FFFF
+# palette = 52=#5F0000
+# palette = 53=#5F005F
+# palette = 54=#5F0087
+# palette = 55=#5F00AF
+# palette = 56=#5F00D7
+# palette = 57=#5F00FF
+# palette = 58=#5F5F00
+# palette = 59=#5F5F5F
+# palette = 60=#5F5F87
+# palette = 61=#5F5FAF
+# palette = 62=#5F5FD7
+# palette = 63=#5F5FFF
+# palette = 64=#5F8700
+# palette = 65=#5F875F
+# palette = 66=#5F8787
+# palette = 67=#5F87AF
+# palette = 68=#5F87D7
+# palette = 69=#5F87FF
+# palette = 70=#5FAF00
+# palette = 71=#5FAF5F
+# palette = 72=#5FAF87
+# palette = 73=#5FAFAF
+# palette = 74=#5FAFD7
+# palette = 75=#5FAFFF
+# palette = 76=#5FD700
+# palette = 77=#5FD75F
+# palette = 78=#5FD787
+# palette = 79=#5FD7AF
+# palette = 80=#5FD7D7
+# palette = 81=#5FD7FF
+# palette = 82=#5FFF00
+# palette = 83=#5FFF5F
+# palette = 84=#5FFF87
+# palette = 85=#5FFFAF
+# palette = 86=#5FFFD7
+# palette = 87=#5FFFFF
+# palette = 88=#870000
+# palette = 89=#87005F
+# palette = 90=#870087
+# palette = 91=#8700AF
+# palette = 92=#8700D7
+# palette = 93=#8700FF
+# palette = 94=#875F00
+# palette = 95=#875F5F
+# palette = 96=#875F87
+# palette = 97=#875FAF
+# palette = 98=#875FD7
+# palette = 99=#875FFF
+# palette = 100=#878700
+# palette = 101=#87875F
+# palette = 102=#878787
+# palette = 103=#8787AF
+# palette = 104=#8787D7
+# palette = 105=#8787FF
+# palette = 106=#87AF00
+# palette = 107=#87AF5F
+# palette = 108=#87AF87
+# palette = 109=#87AFAF
+# palette = 110=#87AFD7
+# palette = 111=#87AFFF
+# palette = 112=#87D700
+# palette = 113=#87D75F
+# palette = 114=#87D787
+# palette = 115=#87D7AF
+# palette = 116=#87D7D7
+# palette = 117=#87D7FF
+# palette = 118=#87FF00
+# palette = 119=#87FF5F
+# palette = 120=#87FF87
+# palette = 121=#87FFAF
+# palette = 122=#87FFD7
+# palette = 123=#87FFFF
+# palette = 124=#AF0000
+# palette = 125=#AF005F
+# palette = 126=#AF0087
+# palette = 127=#AF00AF
+# palette = 128=#AF00D7
+# palette = 129=#AF00FF
+# palette = 130=#AF5F00
+# palette = 131=#AF5F5F
+# palette = 132=#AF5F87
+# palette = 133=#AF5FAF
+# palette = 134=#AF5FD7
+# palette = 135=#AF5FFF
+# palette = 136=#AF8700
+# palette = 137=#AF875F
+# palette = 138=#AF8787
+# palette = 139=#AF87AF
+# palette = 140=#AF87D7
+# palette = 141=#AF87FF
+# palette = 142=#AFAF00
+# palette = 143=#AFAF5F
+# palette = 144=#AFAF87
+# palette = 145=#AFAFAF
+# palette = 146=#AFAFD7
+# palette = 147=#AFAFFF
+# palette = 148=#AFD700
+# palette = 149=#AFD75F
+# palette = 150=#AFD787
+# palette = 151=#AFD7AF
+# palette = 152=#AFD7D7
+# palette = 153=#AFD7FF
+# palette = 154=#AFFF00
+# palette = 155=#AFFF5F
+# palette = 156=#AFFF87
+# palette = 157=#AFFFAF
+# palette = 158=#AFFFD7
+# palette = 159=#AFFFFF
+# palette = 160=#D70000
+# palette = 161=#D7005F
+# palette = 162=#D70087
+# palette = 163=#D700AF
+# palette = 164=#D700D7
+# palette = 165=#D700FF
+# palette = 166=#D75F00
+# palette = 167=#D75F5F
+# palette = 168=#D75F87
+# palette = 169=#D75FAF
+# palette = 170=#D75FD7
+# palette = 171=#D75FFF
+# palette = 172=#D78700
+# palette = 173=#D7875F
+# palette = 174=#D78787
+# palette = 175=#D787AF
+# palette = 176=#D787D7
+# palette = 177=#D787FF
+# palette = 178=#D7AF00
+# palette = 179=#D7AF5F
+# palette = 180=#D7AF87
+# palette = 181=#D7AFAF
+# palette = 182=#D7AFD7
+# palette = 183=#D7AFFF
+# palette = 184=#D7D700
+# palette = 185=#D7D75F
+# palette = 186=#D7D787
+# palette = 187=#D7D7AF
+# palette = 188=#D7D7D7
+# palette = 189=#D7D7FF
+# palette = 190=#D7FF00
+# palette = 191=#D7FF5F
+# palette = 192=#D7FF87
+# palette = 193=#D7FFAF
+# palette = 194=#D7FFD7
+# palette = 195=#D7FFFF
+# palette = 196=#FF0000
+# palette = 197=#FF005F
+# palette = 198=#FF0087
+# palette = 199=#FF00AF
+# palette = 200=#FF00D7
+# palette = 201=#FF00FF
+# palette = 202=#FF5F00
+# palette = 203=#FF5F5F
+# palette = 204=#FF5F87
+# palette = 205=#FF5FAF
+# palette = 206=#FF5FD7
+# palette = 207=#FF5FFF
+# palette = 208=#FF8700
+# palette = 209=#FF875F
+# palette = 210=#FF8787
+# palette = 211=#FF87AF
+# palette = 212=#FF87D7
+# palette = 213=#FF87FF
+# palette = 214=#FFAF00
+# palette = 215=#FFAF5F
+# palette = 216=#FFAF87
+# palette = 217=#FFAFAF
+# palette = 218=#FFAFD7
+# palette = 219=#FFAFFF
+# palette = 220=#FFD700
+# palette = 221=#FFD75F
+# palette = 222=#FFD787
+# palette = 223=#FFD7AF
+# palette = 224=#FFD7D7
+# palette = 225=#FFD7FF
+# palette = 226=#FFFF00
+# palette = 227=#FFFF5F
+# palette = 228=#FFFF87
+# palette = 229=#FFFFAF
+# palette = 230=#FFFFD7
+# palette = 231=#FFFFFF
+# palette = 232=#080808
+# palette = 233=#121212
+# palette = 234=#1C1C1C
+# palette = 235=#262626
+# palette = 236=#303030
+# palette = 237=#3A3A3A
+# palette = 238=#444444
+# palette = 239=#4E4E4E
+# palette = 240=#585858
+# palette = 241=#626262
+# palette = 242=#6C6C6C
+# palette = 243=#767676
+# palette = 244=#808080
+# palette = 245=#8A8A8A
+# palette = 246=#949494
+# palette = 247=#9E9E9E
+# palette = 248=#A8A8A8
+# palette = 249=#B2B2B2
+# palette = 250=#BCBCBC
+# palette = 251=#C6C6C6
+# palette = 252=#D0D0D0
+# palette = 253=#DADADA
+# palette = 254=#E4E4E4
+# palette = 255=#EEEEEE
 
 # The color of the cursor. If this is not set, a default will be chosen.
 # 
@@ -2287,7 +2287,7 @@ click-repeat-interval = 0
 # If "foo" contains `a = 2`, the final value of `a` will be 2, because
 # `foo` is loaded after the configuration file that configures the
 # nested `config-file` value.
-config-file =
+config-file = ?auto/theme.ghostty
 
 # When this is true, the default configuration file paths will be loaded.
 # The default configuration file paths are currently only the XDG
