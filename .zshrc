@@ -106,10 +106,6 @@ source "$HOME"/Files/Developer/lucy/completions/lucy.zsh
 eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)"
 
-# alien shell prompt & config
-source "$HOME/.alien/alien.zsh"
-source "$HOME/.config/alien/config.zsh"
-
 # Command replacements
 alias cat='bat'
 alias clear='clear && fastfetch'
@@ -262,6 +258,9 @@ if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
         ghostty +boo
     }
 fi
+
+# prompt
+eval "$(starship init zsh)"
 
 # print logo
 clear
