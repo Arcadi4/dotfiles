@@ -96,6 +96,7 @@
 # configuration files or on the CLI if you want to clear values set on the
 # CLI.
 font-family = Monaspace Neon Var
+font-family = Sarasa Mono SC
 
 font-family-bold =
 font-family-italic =
@@ -1765,7 +1766,10 @@ keybind = super+alt+i=inspector:toggle
 keybind = super+digit_5=goto_tab:5
 keybind = super+digit_3=goto_tab:3
 keybind = super+ctrl+arrow_up=resize_split:up,10
-keybind = super+d=new_split:right
+
+# colemak
+keybind = super+s=new_split:right
+keybind = super+r=new_split:down
 
 # Horizontal window padding. This applies padding between the terminal cells
 # and the left and right window borders. The value is in points, meaning that
