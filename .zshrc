@@ -106,24 +106,9 @@ source "$HOME"/Files/Developer/lucy/completions/lucy.zsh
 eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)"
 
-# shell prompt configs (alien)
-source "$HOME/alien/alien.zsh"
-
-export ALIEN_SECTIONS_LEFT=(
-    exit
-    time
-    path
-    vcs_branch:async
-    vcs_status:async
-    vcs_dirty:async
-    newline
-    ssh
-    venvs
-    prompt
-)
-
-export ALIEN_SECTION_TIME_FORMAT=%H:%M:%S
-export ALIEN_THEME="gruvbox"
+# alien shell prompt & config
+source "$HOME/.alien/alien.zsh"
+source "$HOME/.config/alien/config.zsh"
 
 # Command replacements
 alias cat='bat'
