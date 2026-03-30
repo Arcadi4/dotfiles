@@ -147,17 +147,15 @@
     "http.systemCertificatesNode": true,
     "jdk.telemetry.enabled": false,
     "json.schemaDownload.trustedDomains": {
-        "https://developer.microsoft.com/json-schemas/": true,
+        "https://developer.microsoft.com/json-schemas": true,
         "https://github.com": true,
-        "https://json-schema.org/": true,
-        "https://json.schemastore.org/": true,
+        "https://json-schema.org": true,
+        "https://json.schemastore.org": true,
         "https://models.dev": true,
         "https://opencode.ai": true,
-        "https://raw.githubusercontent.com/": true,
-        "https://raw.githubusercontent.com/devcontainers/spec/": true,
-        "https://raw.githubusercontent.com/microsoft/vscode/": true,
-        "https://schemastore.azurewebsites.net/": true,
-        "https://www.schemastore.org/": true
+        "https://raw.githubusercontent.com": true,
+        "https://schemastore.azurewebsites.net": true,
+        "https://www.schemastore.org": true
     },
     "latex-workshop.bibtex-format.sort.enabled": true,
     "latex-workshop.formatting.latex": "latexindent",
@@ -169,9 +167,6 @@
     "latex-workshop.view.pdf.invertMode.brightness": 1.2,
     "latex-workshop.view.pdf.invertMode.enabled": "never",
     "latex-workshop.view.pdf.invertMode.grayscale": 0.2,
-    "launch": {
-        "configurations": []
-    },
     "leetcode.defaultLanguage": "cpp",
     "leetcode.hint.commentDescription": false,
     "leetcode.workspaceFolder": "~/.leetcode",
@@ -270,5 +265,7 @@
     "workbench.preferredHighContrastColorTheme": "Gruvbox Dark (Hard)",
     "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light (Hard)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "terminal.integrated.fontLigatures.enabled": true,
+    "editor.minimap.sectionHeaderFontSize": 10
 }
