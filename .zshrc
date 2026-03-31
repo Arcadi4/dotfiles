@@ -171,8 +171,8 @@ function fzf {
 
     # copy to clipboard
     if [[ -n "$result" ]]; then
-        echo "copied to clipboard: $result"
-        echo -n "$result" | pbcopy
+        printf "copied: %s" "$result"
+        printf "%s" "$result" | pbcopy
     fi
 }
 
@@ -196,10 +196,12 @@ function cleanbrew() {
     brew autoremove
 }
 
-function historyx() {
+historyx() {
     local cmd
     cmd="$(history | command fzf | xargs | cut -d ' ' -f 2-)"
-    [[ -n "$cmd" ]] && print -z -- "$cmd"
+    if [[ -n "$cmd" ]]; then
+        print -z -- "$cmd"
+    fi
 }
 
 function loop() {
