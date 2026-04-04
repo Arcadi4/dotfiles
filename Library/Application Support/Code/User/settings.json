@@ -196,11 +196,6 @@
         "--disable=C0301,C0115,C0114"
     ],
     "pylint.importStrategy": "fromEnvironment",
-    "pylint.interpreter": [
-        "python3",
-        ".venv/bin/python3"
-    ],
-    "pylint.lintOnChange": true,
     "python.analysis.typeCheckingMode": "standard",
     "python.createEnvironment.trigger": "off",
     "python.defaultInterpreterPath": "/usr/bin/python3",
@@ -267,5 +262,6 @@
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
     "workbench.startupEditor": "none",
     "terminal.integrated.fontLigatures.enabled": true,
-    "editor.minimap.sectionHeaderFontSize": 10
+    "editor.minimap.sectionHeaderFontSize": 10,
+    "git.blame.editorDecoration.enabled": true
 }
