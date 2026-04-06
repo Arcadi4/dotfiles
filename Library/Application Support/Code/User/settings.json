@@ -263,5 +263,6 @@
     "workbench.startupEditor": "none",
     "terminal.integrated.fontLigatures.enabled": true,
     "editor.minimap.sectionHeaderFontSize": 10,
-    "git.blame.editorDecoration.enabled": true
+    "git.blame.editorDecoration.enabled": true,
+    "js/ts.updateImportsOnFileMove.enabled": "always"
 }
