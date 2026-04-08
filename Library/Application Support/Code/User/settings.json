@@ -264,5 +264,6 @@
     "terminal.integrated.fontLigatures.enabled": true,
     "editor.minimap.sectionHeaderFontSize": 10,
     "git.blame.editorDecoration.enabled": true,
-    "js/ts.updateImportsOnFileMove.enabled": "always"
+    "js/ts.updateImportsOnFileMove.enabled": "always",
+    "git.enableSmartCommit": true
 }
