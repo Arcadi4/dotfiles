@@ -198,7 +198,7 @@ function cleanbrew() {
 
 historyx() {
     local cmd
-    cmd="$(history | command fzf | xargs | cut -d ' ' -f 2-)"
+    cmd="$(fc -l -1000 | command fzf | awk '{$1=""; print $0}' | sed 's/^ *//')"
     if [[ -n "$cmd" ]]; then
         print -z -- "$cmd"
     fi
@@ -249,6 +249,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # icu4c
 export PATH="/opt/homebrew/opt/icu4c@78/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c@78/sbin:$PATH"
+
+# dotnet
+export DOTNET_ROOT=/opt/homebrew/Cellar/dotnet/10.0.105/libexec
 
 # local bin
 export PATH="$PATH:$HOME/.local/bin"
