@@ -265,5 +265,11 @@
     "editor.minimap.sectionHeaderFontSize": 10,
     "git.blame.editorDecoration.enabled": true,
     "js/ts.updateImportsOnFileMove.enabled": "always",
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "[git-rebase]": {
+        "workbench.editor.restoreViewState": false
+    },
+    "gitlens.rebaseEditor.openOnPausedRebase": "interactive",
+    "githubPullRequests.defaultMergeMethod": "rebase",
+    "gitlens.rebaseEditor.density": "comfortable"
 }

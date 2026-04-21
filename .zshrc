@@ -120,6 +120,7 @@ alias zsh='exec zsh'
 # Quick commands
 alias hmcl='nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown'
 alias zshrc='code ~/.zshrc'
+alias skills='npx skills'
 
 # Java
 alias gradlew='./gradlew'
@@ -269,3 +270,6 @@ eval "$(starship init zsh)"
 
 # print logo
 clear
+
+# bun completions
+[ -s "/Users/skylar/.bun/_bun" ] && source "/Users/skylar/.bun/_bun"
