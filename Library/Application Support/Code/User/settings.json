@@ -5,6 +5,9 @@
     "[css]": {
         "editor.defaultFormatter": "vscode.css-language-features"
     },
+    "[git-rebase]": {
+        "workbench.editor.restoreViewState": false
+    },
     "[latex]": {
         "editor.formatOnPaste": false,
         "editor.suggestSelection": "recentlyUsedByPrefix"
@@ -85,6 +88,7 @@
     "editor.inlineSuggest.fontFamily": "Monaspace Radon",
     "editor.matchBrackets": "near",
     "editor.minimap.autohide": "mouseover",
+    "editor.minimap.sectionHeaderFontSize": 10,
     "editor.quickSuggestions": {
         "strings": "on"
     },
@@ -116,6 +120,8 @@
     },
     "files.autoGuessEncoding": true,
     "git.autofetch": true,
+    "git.blame.editorDecoration.enabled": true,
+    "git.enableSmartCommit": true,
     "git.openRepositoryInParentFolders": "never",
     "github.copilot.enable": {
         "*": true,
@@ -124,8 +130,11 @@
         "scminput": false
     },
     "github.copilot.nextEditSuggestions.enabled": true,
+    "githubPullRequests.defaultMergeMethod": "rebase",
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "gitlens.rebaseEditor.density": "comfortable",
+    "gitlens.rebaseEditor.openOnPausedRebase": "interactive",
     "go.formatTool": "gofumpt",
     "go.inlayHints.ignoredError": true,
     "go.toolsManagement.autoUpdate": true,
@@ -146,6 +155,7 @@
     "html.format.wrapLineLength": 0,
     "http.systemCertificatesNode": true,
     "jdk.telemetry.enabled": false,
+    "js/ts.updateImportsOnFileMove.enabled": "always",
     "json.schemaDownload.trustedDomains": {
         "https://developer.microsoft.com/json-schemas": true,
         "https://github.com": true,
@@ -178,11 +188,9 @@
     "markdown-pdf.printBackground": false,
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.print.includeVscodeStylesheets": false,
-    "markdown.extension.tableFormatter.delimiterRowNoPadding": true,
     "markdown.extension.theming.decoration.renderLink": true,
-    "markdown.extension.toc.levels": "2..6",
+    "markdown.extension.toc.orderedList": true,
     "markdownlint.config": {
-        "MD014": false,
         "MD033": false,
         "MD041": false
     },
@@ -213,6 +221,7 @@
         "FIG_NEW_SESSION": "1"
     },
     "terminal.integrated.fontFamily": "Monaspace Neon",
+    "terminal.integrated.fontLigatures.enabled": true,
     "terminal.integrated.fontWeight": "400",
     "terminal.integrated.fontWeightBold": "700",
     "terminal.integrated.lineHeight": 1.15,
@@ -260,16 +269,5 @@
     "workbench.preferredHighContrastColorTheme": "Gruvbox Dark (Hard)",
     "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light (Hard)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none",
-    "terminal.integrated.fontLigatures.enabled": true,
-    "editor.minimap.sectionHeaderFontSize": 10,
-    "git.blame.editorDecoration.enabled": true,
-    "js/ts.updateImportsOnFileMove.enabled": "always",
-    "git.enableSmartCommit": true,
-    "[git-rebase]": {
-        "workbench.editor.restoreViewState": false
-    },
-    "gitlens.rebaseEditor.openOnPausedRebase": "interactive",
-    "githubPullRequests.defaultMergeMethod": "rebase",
-    "gitlens.rebaseEditor.density": "comfortable"
+    "workbench.startupEditor": "none"
 }

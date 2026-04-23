@@ -128,7 +128,7 @@ alias gradlew='./gradlew'
 # Default flags
 alias cp='cp -iv'
 alias dust='dust -r'
-alias markdownlint='markdownlint --disable MD013 --disable MD007'
+alias markdownlint='markdownlint-cli2'
 alias mv='mv -iv'
 alias rm='rm -iv'
 
