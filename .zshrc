@@ -100,7 +100,6 @@ source "$ZSH/oh-my-zsh.sh"
 
 # shell completions
 eval "$(pnpm completion zsh)"
-source "$HOME"/Files/Developer/lucy/completions/lucy.zsh
 
 # command helpers
 eval "$(zoxide init zsh)"
@@ -120,7 +119,6 @@ alias zsh='exec zsh'
 # Quick commands
 alias hmcl='nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown'
 alias zshrc='code ~/.zshrc'
-alias skills='npx skills'
 
 # Java
 alias gradlew='./gradlew'
@@ -236,6 +234,9 @@ omo() {
 
     OPENCODE_CONFIG_CONTENT="$updated_json" opencode "$@"
 }
+
+# python version
+PATH+="$(brew --prefix python@3.12)/libexec/bin"
 
 # console-ninja
 export PATH=~/.console-ninja/.bin:$PATH

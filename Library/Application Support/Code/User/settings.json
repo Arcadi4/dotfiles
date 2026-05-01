@@ -131,7 +131,7 @@
     },
     "github.copilot.nextEditSuggestions.enabled": true,
     "githubPullRequests.defaultMergeMethod": "rebase",
-    "gitlens.ai.model": "vscode",
+    "gitlens.ai.model": "gitkraken",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "gitlens.rebaseEditor.density": "comfortable",
     "gitlens.rebaseEditor.openOnPausedRebase": "interactive",
@@ -269,5 +269,22 @@
     "workbench.preferredHighContrastColorTheme": "Gruvbox Dark (Hard)",
     "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light (Hard)",
     "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.ai.gitkraken.model": "openai:gpt-5-mini",
+    "gitlens.currentLine.pullRequests.enabled": false,
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": true,
+        "contributors": true,
+        "fileHistory": false,
+        "repositories": true,
+        "searchAndCompare": false,
+        "launchpad": true
+    },
+    "markdown-preview-enhanced.previewTheme": "monokai.css"
 }
