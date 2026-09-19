@@ -1,53 +1,53 @@
 {
   "[aslx]": {
-    "editor.defaultFormatter": "DotJoshJohnson.xml"
+    "editor.defaultFormatter": "DotJoshJohnson.xml",
   },
   "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.defaultFormatter": "vscode.css-language-features",
   },
   "[csv]": {},
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[json]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[latex]": {
     "editor.formatOnPaste": false,
-    "editor.suggestSelection": "recentlyUsedByPrefix"
+    "editor.suggestSelection": "recentlyUsedByPrefix",
   },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-    "editor.wordWrap": "bounded"
+    "editor.wordWrap": "bounded",
   },
   "[mdx]": {
-    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx",
   },
   "[plaintext]": {
     "editor.formatOnSave": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.unicodeHighlight.invisibleCharacters": false
+    "editor.unicodeHighlight.invisibleCharacters": false,
   },
   "[python]": {
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
+      "source.organizeImports": "explicit",
     },
     "editor.defaultColorDecorators": "never",
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnType": true,
     "editor.wordBasedSuggestions": "off",
-    "gitlens.codeLens.symbolScopes": ["!Module"]
+    "gitlens.codeLens.symbolScopes": ["!Module"],
   },
   "[r]": {
-    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",<>/"
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",<>/",
   },
   "[shellscript]": {
-    "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+    "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode",
   },
   "[skill]": {
     "diffEditor.ignoreTrimWhitespace": true,
@@ -57,25 +57,25 @@
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "on",
-      "strings": "on"
+      "strings": "on",
     },
     "editor.tabSize": 2,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordBasedSuggestions": "off",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
   },
   "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "[yaml]": {
-    "editor.defaultFormatter": "oxc.oxc-vscode"
+    "editor.defaultFormatter": "oxc.oxc-vscode",
   },
   "@azure.argTenant": "",
   "animations.Command-Palette": "Fade",
@@ -107,7 +107,7 @@
   "editor.accessibilitySupport": "off",
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
   },
   "editor.codeLensFontFamily": "Monaspace Krypton",
   "editor.cursorSmoothCaretAnimation": "explicit",
@@ -126,7 +126,7 @@
   "editor.minimap.autohide": "mouseover",
   "editor.minimap.sectionHeaderFontSize": 10,
   "editor.quickSuggestions": {
-    "strings": "on"
+    "strings": "on",
   },
   "editor.quickSuggestionsDelay": 5,
   "editor.renderControlCharacters": false,
@@ -150,7 +150,7 @@
   "files.associations": {
     "*.bib": "bibtex",
     "*.Rmd": "rmd",
-    "*.zsh": "shellscript"
+    "*.zsh": "shellscript",
   },
   "files.autoGuessEncoding": true,
   "git.autofetch": true,
@@ -180,13 +180,13 @@
     "searchAndCompare": false,
     "stashes": true,
     "tags": true,
-    "worktrees": true
+    "worktrees": true,
   },
   "go.formatTool": "gofumpt",
   "go.inlayHints.ignoredError": true,
   "go.toolsManagement.autoUpdate": true,
   "gopls": {
-    "ui.semanticTokens": true
+    "ui.semanticTokens": true,
   },
   "gruvboxMaterial.darkCursor": "orange",
   "gruvboxMaterial.darkSelection": "orange",
@@ -225,7 +225,7 @@
     "https://turbo.build": true,
     "https://unpkg.com": true,
     "https://www.schemastore.org": true,
-    "https://www.schemastore.org/": true
+    "https://www.schemastore.org/": true,
   },
   "latex-workshop.bibtex-format.sort.enabled": true,
   "latex-workshop.formatting.latex": "latexindent",
@@ -336,7 +336,7 @@
     "*/",
     "+++",
     "<!--",
-    "<!---"
+    "<!---",
   ],
   "terminal.integrated.fontLigatures.featureSettings": "\"ss01\" on, \"ss02\" on, \"ss03\" on, \"ss06\" on, \"ss07\" on, \"calt\" on, \"liga\" on, \"dlig\" on",
   "terminal.integrated.fontWeight": "400",
@@ -348,7 +348,7 @@
   "totalTypeScript.hideBasicTips": false,
   "vscode_custom_css.imports": [
     "file://~/.vscode.css",
-    "file:///Users/skylar/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    "file:///Users/skylar/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.9/dist/updateHandler.js",
   ],
   "vscode-office.editorTheme": "Auto",
   "window.autoDetectColorScheme": true,
@@ -380,7 +380,7 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
     "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default",
-    "*.copilotmd": "vscode.markdown.preview.editor"
+    "*.copilotmd": "vscode.markdown.preview.editor",
   },
   "workbench.fontAliasing": "auto",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
@@ -396,6 +396,7 @@
     "**/.gitea/workflows/*.yml",
     "**/.gitea/workflows/*.yaml",
     "**/.forgejo/workflows/*.yml",
-    "**/.forgejo/workflows/*.yaml"
-  ]
+    "**/.forgejo/workflows/*.yaml",
+  ],
+  "markdownlint.configFile": "/Users/skylar/.config/markdownlint/config.jsonc",
 }

@@ -135,6 +135,9 @@ alias markdownlint='markdownlint-cli2'
 alias mv='mv -iv'
 alias rm='rm -iv'
 
+# markdownlint config
+alias markdownlint-cli2='markdownlint-cli2 --config ~/.config/markdownlint/config.jsonc'
+
 # fzf configs
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --preview='
     if [[ -f '{}' ]]; then
