@@ -108,7 +108,7 @@ eval "$(opencode completion)"
 eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)"
 
-# Command replacements
+# Command replacements and aliases
 alias cat='bat'
 alias clear='clear && fastfetch'
 alias df='duf'
@@ -120,10 +120,10 @@ alias vim='nvim'
 alias zsh='exec zsh'
 alias oc='opencode'
 
-# Quick commands
+# Shortcuts
 alias hmcl='pushd ~; nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown; popd'
-alias zshrc='code ~/.zshrc'
-alias lzg='lazygit'
+alias zshrc='vim ~/.zshrc'
+alias icat='kitten icat'
 
 # Java
 alias gradlew='./gradlew'
