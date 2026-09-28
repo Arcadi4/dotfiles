@@ -95,7 +95,20 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_SAVE_NO_DUPS
 
 # omz
-export plugins=(rust golang git fast-syntax-highlighting iterm2 zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node yarn tig mongocli pip pipenv nodenv emoji copyfile copypath safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo 1password)
+export plugins=(
+  rust
+  1password
+  tig
+  tmux
+  git
+  gitignore
+  macos
+  copyfile
+  copypath
+  sudo
+  colored-man-pages
+  fast-syntax-highlighting
+)
 source "$ZSH/oh-my-zsh.sh"
 
 # shell completions
