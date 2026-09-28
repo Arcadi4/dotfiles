@@ -1,4 +1,5 @@
 {
+  "defaultNodeVersion": "26.10.0",
   "packageManagerShimModes": {
     "bun": "managed",
     "npm": "managed",

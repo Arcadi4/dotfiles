@@ -389,7 +389,6 @@
   "workbench.preferredHighContrastColorTheme": "Gruvbox Dark (Hard)",
   "workbench.preferredHighContrastLightColorTheme": "Gruvbox Light (Hard)",
   "workbench.preferredLightColorTheme": "Gruvbox Light (Medium)",
-  "workbench.startupEditor": "none",
   "yaml.disableSchemaDetection": [
     "**/.github/workflows/*.yml",
     "**/.github/workflows/*.yaml",

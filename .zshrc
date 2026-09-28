@@ -95,30 +95,33 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_SAVE_NO_DUPS
 
 # omz
-export plugins=(rust golang git fast-syntax-highlighting iterm2 zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node deno yarn tig mongocli pip pipenv nodenv emoji copyfile copypath safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo 1password)
+export plugins=(rust golang git fast-syntax-highlighting iterm2 zoxide zsh-interactive-cd zsh-navigation-tools brew github gitignore git-auto-fetch git-commit npm nmap node yarn tig mongocli pip pipenv nodenv emoji copyfile copypath safe-paste thefuck themes macos tmux ssh ssh-agent colorize colored-man-pages sudo 1password)
 source "$ZSH/oh-my-zsh.sh"
 
 # shell completions
 eval "$(pnpm completion zsh)"
 eval "$(bun completions zsh)"
 eval "$(lucy completion zsh)"
-eval "$(opencode completion)"
+# eval "$(opencode completion)"
 
-# command helpers
+# initializations
 eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)"
+eval "$(starship init zsh)"
 
 # Command replacements and aliases
 alias cat='bat'
-alias clear='clear && fastfetch'
+alias c='clear && fastfetch'
 alias df='duf'
 alias du='dust'
 alias pip='pip3'
 alias python='python3'
 alias top='htop'
 alias vim='nvim'
+alias v='nvim'
 alias zsh='exec zsh'
 alias oc='opencode'
+alias markdownlint='markdownlint-cli2'
 
 # Shortcuts
 alias hmcl='pushd ~; nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown; popd'
@@ -131,7 +134,6 @@ alias gradlew='./gradlew'
 # Default flags
 alias cp='cp -iv'
 alias dust='dust -r'
-alias markdownlint='markdownlint-cli2'
 alias mv='mv -iv'
 alias rm='rm -iv'
 
@@ -246,16 +248,15 @@ PATH+="$(brew --prefix python@3.12)/libexec/bin"
 # secrets
 source "$HOME/.env.zsh"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # icu4c
 export PATH="/opt/homebrew/opt/icu4c@78/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c@78/sbin:$PATH"
 
 # dotnet
 export DOTNET_ROOT=/opt/homebrew/Cellar/dotnet/10.0.105/libexec
+
+# rustup
+export PATH="/opt/homebrew/opt/rustup/bin:$HOME/.cargo/bin:$PATH"
 
 # local bin
 export PATH="$PATH:$HOME/.local/bin"
@@ -267,12 +268,6 @@ if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
         ghostty +boo
     }
 fi
-
-# prompt
-eval "$(starship init zsh)"
-
-# print logo
-clear
 
 # pnpm
 export PNPM_HOME="/Users/skylar/Library/pnpm"
@@ -287,3 +282,5 @@ fpath=(/Users/skylar/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+clear && fastfetch
