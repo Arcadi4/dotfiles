@@ -81,10 +81,13 @@ export ENABLE_CORRECTION="true"
 # export ARCHFLAGS="-arch x86_64"
 
 # Homebrew setup
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# brew command auto complete, must be done before `source "$ZSH/oh-my-zsh.sh"`
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+export HOMEBREW_PREFIX="/opt/homebrew"
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
+export HOMEBREW_REPOSITORY="/opt/homebrew"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}"
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:"
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
+fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
 
 # zsh history
 export HISTSIZE=999999999
@@ -119,7 +122,6 @@ eval "$(lucy completion zsh)"
 
 # initializations
 eval "$(zoxide init zsh)"
-eval "$(thefuck --alias)"
 eval "$(starship init zsh)"
 
 # Command replacements and aliases
@@ -255,12 +257,6 @@ omo() {
     OPENCODE_CONFIG_CONTENT="$updated_json" opencode "$@"
 }
 
-# python version
-PATH+="$(brew --prefix python@3.12)/libexec/bin"
-
-# secrets
-source "$HOME/.env.zsh"
-
 # icu4c
 export PATH="/opt/homebrew/opt/icu4c@78/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c@78/sbin:$PATH"
@@ -289,11 +285,5 @@ case ":$PATH:" in
 *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
-
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/skylar/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
 
 clear && fastfetch
