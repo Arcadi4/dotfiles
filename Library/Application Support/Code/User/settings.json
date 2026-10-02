@@ -398,4 +398,7 @@
     "**/.forgejo/workflows/*.yaml",
   ],
   "markdownlint.configFile": "/Users/skylar/.config/markdownlint/config.jsonc",
+  "[html]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+  },
 }

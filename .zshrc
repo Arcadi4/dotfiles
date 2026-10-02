@@ -119,6 +119,7 @@ eval "$(pnpm completion zsh)"
 eval "$(bun completions zsh)"
 eval "$(lucy completion zsh)"
 # eval "$(opencode completion)"
+eval "$(cf complete zsh)"
 
 # initializations
 eval "$(zoxide init zsh)"
@@ -287,3 +288,6 @@ esac
 # pnpm end
 
 clear && fastfetch
+
+# Vite+ bin (https://viteplus.dev)
+. "/Users/skylar/.config/vite-plus/env"
