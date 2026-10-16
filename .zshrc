@@ -138,6 +138,7 @@ alias v='nvim'
 alias zsh='exec zsh'
 alias oc='opencode'
 alias markdownlint='markdownlint-cli2'
+alias lgit='lazygit'
 
 # Shortcuts
 alias hmcl='pushd ~; nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown; popd'
@@ -218,7 +219,7 @@ function cleanbrew() {
     brew autoremove
 }
 
-historyx() {
+hist() {
     local cmd
     cmd="$(history | command fzf | awk '{$1=""; print $0}' | sed 's/^ *//')"
     if [[ -n "$cmd" ]]; then
@@ -236,26 +237,6 @@ function loop() {
     local interval="${2:-1}"
 
     watch -x -n "$interval" "$SHELL" -c "$cmd"
-}
-
-# launch opencode with oh-my-openagent plugin
-# `~/.config/opencode/opencode.json` should NOT already contain oh-my-openagent.
-omo() {
-    local config_file="$HOME/.config/opencode/opencode.json"
-    local updated_json
-
-    updated_json=$(jq '
-    .plugin = (
-      (.plugin // [])
-      | if any(.[]; test("^oh-my-openagent(@.*)?$")) then
-          .
-        else
-          . + ["oh-my-openagent"]
-        end
-    )
-  ' "$config_file")
-
-    OPENCODE_CONFIG_CONTENT="$updated_json" opencode "$@"
 }
 
 # icu4c

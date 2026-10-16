@@ -381,6 +381,7 @@
   "workbench.editorAssociations": {
     "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default",
     "*.copilotmd": "vscode.markdown.preview.editor",
+    "git-rebase-todo": "gitlens.rebase",
   },
   "workbench.fontAliasing": "auto",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
@@ -401,4 +402,6 @@
   "[html]": {
     "editor.defaultFormatter": "oxc.oxc-vscode",
   },
+  "gitlens.graph.details.location": "auto",
+  "workbench.productIconTheme": "viraUIIcons",
 }
