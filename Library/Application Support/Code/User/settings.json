@@ -404,4 +404,7 @@
   },
   "gitlens.graph.details.location": "auto",
   "workbench.productIconTheme": "viraUIIcons",
+  "github.copilot.enable": {
+    "latex": false,
+  },
 }
