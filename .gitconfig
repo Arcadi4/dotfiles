@@ -11,6 +11,7 @@
 	lo = log --oneline --graph --decorate
 	pf = push --force-with-lease
 	pl = pull --rebase --auto-stash
+	wt = worktree
 [gpg]
 	program = gpg
 	format = ssh
@@ -48,12 +49,12 @@
 	ff = false
 	autostash = true
 [credential "https://github.com"]
-	helper = 
+	helper =
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
+	helper =
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [diff "schematic"]
-  command = schematic-diff --pack Minecraft/vanilla.zip
+command = schematic-diff --pack Minecraft/vanilla.zip
 [push]
 	default = upstream
