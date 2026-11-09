@@ -48,3 +48,5 @@ export PATH="$HOME/Library/TinyTeX/bin/universal-darwin:$PATH"
 # Added by Toolbox App
 export PATH="$PATH:/usr/local/bin"
 
+# GPG
+export GPG_TTY=$(tty)

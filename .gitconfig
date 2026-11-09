@@ -12,29 +12,17 @@
 	pf = push --force-with-lease
 	pl = pull --rebase --auto-stash
 	wt = worktree
-[gpg]
-	program = gpg
-	format = ssh
 [commit]
 	gpgsign = true
 [tag]
 	forceSignAnnotated = true
 	gpgSign = true
-[gpg "ssh"]
-	program = ssh-keygen
-	allowedSignersFile =
 [core]
-	# commit message 使用 nvim
 	editor = "nvim"
-
-[sequence]
-	# rebase todo 使用 VSC
-	# editor = "code --wait"
-	editor = "nvim"
-
 [user]
 	email = 97033226+Arcadi4@users.noreply.github.com
 	name = 4rcadia
+	signingkey = ACDA4247CC41C6B648323F0863733CD4D8F07D45!
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

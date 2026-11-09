@@ -139,6 +139,7 @@ alias zsh='exec zsh'
 alias oc='opencode'
 alias markdownlint='markdownlint-cli2'
 alias lgit='lazygit'
+alias pinentry='pinentry-mac'
 
 # Shortcuts
 alias hmcl='pushd ~; nohup java -jar ~/Minecraft/HMCL.jar &>/dev/null & disown; popd'
